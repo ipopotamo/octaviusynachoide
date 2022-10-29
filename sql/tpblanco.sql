@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 26-10-2022 a las 21:39:40
+-- Tiempo de generación: 29-10-2022 a las 02:03:12
 -- Versión del servidor: 10.4.24-MariaDB
--- Versión de PHP: 7.4.29
+-- Versión de PHP: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -32,18 +32,6 @@ CREATE TABLE `funcion` (
   `idr` int(11) NOT NULL,
   `funcion` varchar(45) COLLATE utf8_spanish2_ci NOT NULL,
   `descf` varchar(255) COLLATE utf8_spanish2_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `imagenes`
---
-
-CREATE TABLE `imagenes` (
-  `id` int(11) NOT NULL,
-  `idu` int(11) NOT NULL,
-  `img` varchar(255) COLLATE utf8_spanish2_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
 
 -- --------------------------------------------------------
@@ -85,7 +73,8 @@ CREATE TABLE `usuarios` (
   `edad` int(11) NOT NULL,
   `contrasena` varchar(255) COLLATE utf8_spanish2_ci NOT NULL,
   `nusuario` varchar(255) COLLATE utf8_spanish2_ci NOT NULL,
-  `email` varchar(255) COLLATE utf8_spanish2_ci NOT NULL
+  `email` varchar(255) COLLATE utf8_spanish2_ci NOT NULL,
+  `imagen` varchar(255) COLLATE utf8_spanish2_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
 
 --
@@ -96,12 +85,6 @@ CREATE TABLE `usuarios` (
 -- Indices de la tabla `funcion`
 --
 ALTER TABLE `funcion`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indices de la tabla `imagenes`
---
-ALTER TABLE `imagenes`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -124,12 +107,6 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `funcion`
 --
 ALTER TABLE `funcion`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT de la tabla `imagenes`
---
-ALTER TABLE `imagenes`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
