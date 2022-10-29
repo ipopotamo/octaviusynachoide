@@ -23,5 +23,9 @@
 
     <a href="nuevacontra.html"><button>¿Olvidaste tu contraseña?</button></a>
 
+    <?php
+    include("login.php");
+    ?>
+
 </body>
 </html>
