@@ -19,7 +19,7 @@
     </form>
 
 
-    <a href="crearuser.html"><button>Crear usuario</button></a>
+    <a href="registroDeUsuario.php"><button>Crear usuario</button></a>
 
     <a href="nuevacontra.html"><button>¿Olvidaste tu contraseña?</button></a>
 
