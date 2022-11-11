@@ -25,11 +25,11 @@
     </div>
     
 
-<<<<<<< HEAD
+
 </section>
-=======
+
     <a href="FormReg.php"><button>Crear usuario</button></a>
->>>>>>> 7b1635dc12fd1edde3a64999b7ce9e517acdc13f
+
 
 
     
