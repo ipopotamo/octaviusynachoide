@@ -15,23 +15,17 @@
     <form class = "caja1" method="post">
         <input class = "ingrese-dato-login" type="text"   name="usuario"      placeholder="usuario"><br>
         <input class = "ingrese-dato-login" type="text"   name="contraseña"   placeholder="contraseña"><br>
+        
+        <a href ="nuevacontra.html">¿Olvidaste tu contraseña?</a>
+        <a href ="FormReg.php"><button class ="boton-del-login">Crear Usuario</button></a><br>
+
+        
         <input  type="submit" name="mandar">
     </form>
 
-    <div class = "caja2">
-        <a href="registroDeUsuario.php"><button class ="boton-del-login">Crear Usuario</button></a><br>
-
-        <a href="nuevacontra.html"><button class ="boton-del-login">¿Olvidaste tu contraseña?</button></a>
-    </div>
-    
-
-<<<<<<< HEAD
 </section>
-=======
-    <a href="FormReg.php"><button>Crear usuario</button></a>
->>>>>>> 7b1635dc12fd1edde3a64999b7ce9e517acdc13f
 
-
+    
     
     <?php
     include("login.php");

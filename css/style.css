@@ -27,7 +27,7 @@ button{
 }
 .ingrese-dato-login{
     padding-top: 2%;
-    margin-top: 3%;
+    margin: 3%;
 }
 .contenido-login{
     border: 5px rgb(10, 158, 163) solid;
@@ -43,9 +43,5 @@ button{
 
 .caja1{
     border: black solid 2px;
-    text-align: center;
-}
-.caja2{
-    border: rgb(0, 235, 39) solid 4px;
     text-align: center;
 }
