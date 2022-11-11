@@ -1,0 +1,51 @@
+body{
+    background-color: rgb(80, 39, 39);
+}
+
+.form-element{
+padding: 10px;
+}
+label{
+    color:white;
+}
+.contenido{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+button{
+    padding: 5%;
+    margin-left: 30%;
+
+}
+.boton-del-login{
+    border: 1px red solid;
+    padding: 1%;
+    width: 60%;
+    min-width: 60%;
+    margin: 10px;
+}
+.ingrese-dato-login{
+    padding-top: 2%;
+    margin-top: 3%;
+}
+.contenido-login{
+    border: 5px rgb(10, 158, 163) solid;
+    background-color: rgb(17, 51, 53);
+    width: 50%;
+    height: 500px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    
+}
+
+.caja1{
+    border: black solid 2px;
+    text-align: center;
+}
+.caja2{
+    border: rgb(0, 235, 39) solid 4px;
+    text-align: center;
+}
