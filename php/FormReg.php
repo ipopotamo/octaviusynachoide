@@ -42,7 +42,7 @@
                                     </div>
 
                                     <div class="form-element">
-                                        <label>Nombre de Usuario</label>
+                                        <label>Nombre de Usuario</label><br>
                                         <input type="text" name="usuario" required />
                                     </div>
 
