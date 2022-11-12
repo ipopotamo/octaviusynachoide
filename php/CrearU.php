@@ -18,35 +18,34 @@ if(isset($_POST['mandar'])){
          $has = password_hash($contra,PASSWORD_DEFAULT);  
            if(password_verify($contra,$has))
            {
-<<<<<<< HEAD
+
             
                $consulta  = "INSERT INTO usuarios (`nombre`, `apellido`, `dni`, `edad`, `contrasena`, `nusuario`, `email`, `estado`) VALUES ('$nom','$ap','$dni ','$edad','$has','$usu ','$email', 'Campecino') ";      
                $resultado = mysqli_query($con,$consulta);
-          
-           
-=======
-            $TAG = rand (10000,99999999999);
-            
-           $consulta  = "INSERT INTO usuarios (`nombre`, `apellido`, `dni`, `edad`, `contrasena`, `nusuario`, `email`, `estado`) VALUES ('$nom','$ap','$dni ','$edad','$has','$usu ','$email', 'Campecino') ";      
+ 
+               $TAG = rand (10000,99999999999);
+ 
+               $consulta  = "INSERT INTO usuarios (`nombre`, `apellido`, `dni`, `edad`, `contrasena`, `nusuario`, `email`, `estado`) VALUES ('$nom','$ap','$dni ','$edad','$has','$usu ','$email', 'Campecino') ";      
+               $resultado = mysqli_query($con,$consulta);
 
-           $resultado = mysqli_query($con,$consulta);
->>>>>>> 2a6d75f484b67c450aca44ca5720d19f6672aa1d
-             if($resultado)
-             {
-              $idu = "SELECT `id` FROM `usuarios` WHERE nombre = $nom";
-              $resultID = mysqli_query($con,$idu);
-              echo $resultID;
-               //$consultaTAG = "INSERT INTO `tags`(`idu`, `tag`, `estado`) VALUES ('$resultID','$TAG','Usable')"; //Usable, baneado, Permabaneado
-               
-               //$resultadoTAG = mysqli_query($con,$consultaTAG);
-               header("../html/pag.html");               
-
-             }
+                if($resultado)
+                {
+                 $idu = "SELECT `id` FROM `usuarios` WHERE `email` = '$email' ";
+                 $resultID = mysqli_query($con,$idu);
+                    while($row = $resultID->fetch_assoc())
+                    {
+                      $alfa = $row['id'];
+                      $consultaTAG = "INSERT INTO `tags`(`idu`, `tag`, `estado`) VALUES ('$alfa','$TAG','Usable')"; //Usable, baneado, Permabaneado
+                      $resultadoTAG = mysqli_query($con,$consultaTAG);
+                    }
+                 }
+                 //header("../html/pag.html");               
+               }
            }   
         }
     }
    
-}
+
 
 
 
