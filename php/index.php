@@ -14,7 +14,7 @@
 <section class = "contenido-login">
     <form class = "caja1" method="post">
         <input class = "ingrese-dato-login" type="text"   name="usuario"      placeholder="usuario"><br>
-        <input class = "ingrese-dato-login" type="text"   name="contraseña"   placeholder="contraseña"><br>
+        <input class = "ingrese-dato-login" type="password"   name="contraseña"   placeholder="contraseña"><br>
         <input  type="submit" name="mandar">
     </form>
 
