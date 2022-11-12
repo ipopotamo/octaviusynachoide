@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(80, 39, 39);
+    background-color: rgb(39, 80, 44);
 }
 
 .form-element{
@@ -12,6 +12,7 @@ label{
     align-items: center;
     display: flex;
     justify-content: center;
+    
 }
 button{
     padding: 5%;
@@ -19,11 +20,20 @@ button{
 
 }
 .boton-del-login{
-    border: 1px red solid;
+    /*border: 1px red solid;*/
     padding: 1%;
-    width: 60%;
-    min-width: 60%;
+    width: 25%;
+    min-width: 20%;
     margin: 10px;
+    background-color:rgb(39, 80, 44) ;
+    border-radius: 20px;
+}
+
+.boton-del-login:hover{
+    background-color: rgb(21, 51, 25);
+    transition-duration: 0.4s;
+    color: white;
+
 }
 .ingrese-dato-login{
     padding: 2%;
@@ -31,7 +41,7 @@ button{
 }
 .contenido-login{
     border: 5px rgb(10, 158, 163) solid;
-    background-color: rgb(17, 51, 53);
+    background-color: rgb(4, 81, 85);
     width: 50%;
     height: 500px;
     align-items: center;
@@ -45,6 +55,22 @@ button{
     margin-top: 10%;
     margin-left: 10%;
     margin-right: 10%;
-    border: black solid 2px;
+
     text-align: center;
+}
+#botonInicioSesion{
+    width: 100%;
+    margin-left: 1%;
+    margin-top: 5%;
+}
+
+.Centrar-boton{
+    display: grid;
+    place-items: center;
+}
+a{
+    color: white;
+}
+a:hover{
+    color: tomato;
 }
