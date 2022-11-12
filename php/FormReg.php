@@ -12,10 +12,10 @@
 <body>
     
 
-        <form method="post">
-            <main class="contenido">
-                <section>
-                    <form method="post" name="signup-form">
+    <form method="post">
+        <main class="contenido">
+            <section>
+                <form method="post" name="signup-form">
                                     <div class="form-element">
                                         <label>Nombre</label><br>
                                         <input type="text" name="nombre" required />
@@ -42,6 +42,8 @@
                                     </div>
 
                                     <div class="form-element">
+                                        <label>Nombre de Usuario</label>
+                                        <input type="text" name="usuario" required />
                                         <label>Nombre de Usuario</label><br>
                                         <input type="text" name="usuario" required />
                                     </div>
@@ -56,6 +58,10 @@
                                         <label>Contraseña</label><br>
                                         <input type="password" name="contraseña" required />
                                     </div>
+<<<<<<< HEAD
+=======
+                                    
+>>>>>>> a65820c12bc2091be843cd800ce683984049d863
                                     <div class="form-element">
                                         <label>Confirmar contraseña</label><br>
                                         <input type="password" name="Ccontraseña" required />
