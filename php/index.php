@@ -15,18 +15,12 @@
     <form class = "caja1" method="post">
         <input class = "ingrese-dato-login" type="text"   name="usuario"      placeholder="usuario"><br>
         <input class = "ingrese-dato-login" type="text"   name="contraseña"   placeholder="contraseña"><br>
-        
-        <a href ="nuevacontra.html">¿Olvidaste tu contraseña?</a>
-        <a href ="FormReg.php"><button class ="boton-del-login">Crear Usuario</button></a><br>
-
-        
         <input  type="submit" name="mandar">
     </form>
 
+     <a href ="nuevacontra.html">¿Olvidaste tu contraseña?</a><br>
+     <a href ="FormReg.php"><button class ="boton-del-login">Crear Usuario</button></a><br>
 </section>
-
-    
-    
     <?php
     include("login.php");
     ?>

@@ -35,13 +35,16 @@ button{
     width: 50%;
     height: 500px;
     align-items: center;
-    display: flex;
     justify-content: center;
     margin: auto;
+    text-align: center;
     
 }
 
 .caja1{
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
     border: black solid 2px;
     text-align: center;
 }

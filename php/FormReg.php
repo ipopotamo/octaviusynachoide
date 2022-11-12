@@ -43,15 +43,12 @@
 
                                     <div class="form-element">
                                         <label>Nombre de Usuario</label><br>
-                                        <input type="text" name="username" required />
+                                        <input type="text" name="usuario" required />
                                     </div>
 
                                     <div class="form-element">
                                         <label>Telefono</label><br>
                                         <input type="text" name="telefono" pattern="[0-9]+" required />
-                                        <br>
-                                        <label>Nombre de Usuario</label>
-                                        <input type="text" name="usuario" required />
 
                                     </div>
 
@@ -59,14 +56,15 @@
                                         <label>Contraseña</label><br>
                                         <input type="password" name="contraseña" required />
                                     </div>
-                                    <br>
                                     <div class="form-element">
-                                        <label>Confirmar contraseña</label>
+                                        <label>Confirmar contraseña</label><br>
                                         <input type="password" name="Ccontraseña" required />
                                     </div>
                                     
                                     <button type="submit" name="mandar" value="register">Registrar</button>
+                                    <a href ="index.php"><button >Volver</button></a>
                     </form>
+                    
                        <?php
                             include("CrearU.php");
                         ?>  
