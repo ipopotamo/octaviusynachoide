@@ -44,17 +44,12 @@
                                     <div class="form-element">
                                         <label>Nombre de Usuario</label>
                                         <input type="text" name="usuario" required />
-                                        <label>Nombre de Usuario</label><br>
-                                        <input type="text" name="username" required />
                                     </div>
 
                                     <div class="form-element">
                                         <label>Telefono</label><br>
                                         <input type="text" name="telefono" pattern="[0-9]+" required />
-                                        <br>
-                                        <label>Nombre de Usuario</label>
-                                        <input type="text" name="usuario" required />
-
+                                        <br>                                     
                                     </div>
 
                                     <div class="form-element">
