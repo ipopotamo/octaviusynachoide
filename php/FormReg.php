@@ -61,7 +61,7 @@
                                         <label>Contraseña</label><br>
                                         <input type="password" name="contraseña" required />
                                     </div>
-                                    <br>
+                                    
                                     <div class="form-element">
                                         <label>Confirmar contraseña</label>
                                         <input type="password" name="Ccontraseña" required />

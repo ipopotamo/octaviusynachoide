@@ -24,7 +24,12 @@ if(isset($_POST['mandar'])){
            
            $consulta  = "INSERT INTO usuarios (`nombre`, `apellido`, `dni`, `edad`, `contrasena`, `nusuario`, `email`, `estado`) VALUES ('$nom','$ap','$dni ','$edad','$has','$usu ','$email', 'Campecino') ";      
            $resultado = mysqli_query($con,$consulta);
-            
+             if($resultado)
+             {
+                header("../html/pag.html");
+                
+
+             }
            }   
         }
                 
