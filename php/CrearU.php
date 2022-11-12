@@ -26,8 +26,7 @@ if(isset($_POST['mandar'])){
            $resultado = mysqli_query($con,$consulta);
              if($resultado)
              {
-                header("../html/pag.html");
-                
+                header("../html/pag.html");               
 
              }
            }   
