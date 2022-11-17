@@ -12,8 +12,8 @@
 
 <body>  
 <section class = "contenido-login">
-    <form class = "caja1" method="post">
-        <input class = "ingrese-dato-login" type="text"   name="usuario"      placeholder="usuario"><br>
+    <form class = "caja1" action="validar-login.php" method="post">
+        <input class = "ingrese-dato-login" type="text"       name="usuario"      placeholder="usuario"><br>
         <input class = "ingrese-dato-login" type="password"   name="contraseña"   placeholder="contraseña"><br>
         <input  type="submit" name="mandar">
     </form>
@@ -21,8 +21,9 @@
      <a href ="nuevacontra.html">¿Olvidaste tu contraseña?</a><br>
      <a href ="FormReg.php"><button class ="boton-del-login">Crear Usuario</button></a><br>
 </section>
+    
     <?php
-    include("login.php");
+        include("validar-Login.php");
     ?>
 
 </body>
