@@ -17,9 +17,7 @@ if(isset($_POST['mandar'])){
         if($contra == $Ccontra){
          $has = password_hash($contra,PASSWORD_DEFAULT);  
            if(password_verify($contra,$has))
-           {
-
-            
+           {            
                $consulta  = "INSERT INTO usuarios (`nombre`, `apellido`, `dni`, `edad`, `contrasena`, `nusuario`, `email`, `estado`) VALUES ('$nom','$ap','$dni ','$edad','$has','$usu ','$email', 'Campecino') ";      
                $resultado = mysqli_query($con,$consulta);
  
@@ -39,7 +37,7 @@ if(isset($_POST['mandar'])){
                       $resultadoTAG = mysqli_query($con,$consultaTAG);
                     }
                  }
-                 //header("../html/pag.html");               
+                 header("location: ../html/pag.html");            
                }
            }   
         }
