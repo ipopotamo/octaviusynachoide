@@ -18,12 +18,13 @@
         <input  type="submit" name="mandar">
     </form>
 
-     <a href ="nuevacontra.html">¿Olvidaste tu contraseña?</a><br>
+     <a href ="nuevacontra.php">¿Olvidaste tu contraseña?</a><br>
      <a href ="FormReg.php"><button class ="boton-del-login">Crear Usuario</button></a><br>
 </section>
     
     <?php
-        include("validar-Login.php");
+        include("../php/validar-Login.php");
+
     ?>
 
 </body>

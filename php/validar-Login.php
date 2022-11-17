@@ -22,7 +22,8 @@ include('conex.php');
             if($filas >= 1){
                 
                 if ($resultado) {
-                    header("location: ../html/pag.php");      
+                    header("location: ../pagina/inicio.php");   
+                    exit();   
                 }else{
                     ?>
                     <h1 class="bad">ERROR DE AUTENTIFICACION</h1>
