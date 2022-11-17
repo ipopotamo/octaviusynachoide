@@ -1,3 +1,18 @@
+<?php
+
+		session_start();
+        $varsesionUSUARIO = $_SESSION['usuario'];
+        $varsesionCONTRAS = $_SESSION['contraseña'];
+
+
+		echo $varsesionUSUARIO;
+
+		if ($varsesionUSUARIO == null)?> {
+			<?php header ("location: index.php")
+
+?>}
+
+
 <!DOCTYPE html>
 		<html>
 		<head>
@@ -65,7 +80,7 @@
         <br><br><br><br>
 	</main>
 
-
+	<a href="../php/cerrar_sesion.php">Cerrar Sesion</a>
 
 </body>
 </html>
