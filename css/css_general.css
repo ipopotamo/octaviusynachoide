@@ -54,9 +54,10 @@ label{
 
 .contenido{
     text-align: center;
-    padding: 20px;
-    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 0;
     overflow: hidden;
+
 }
 
 
@@ -94,4 +95,8 @@ h2{
     text-align: center;
     font-family: 'Alfa Slab One', cursive;
     color: white;
+}
+.cerrar-sesion{
+    display: flex;
+
 }

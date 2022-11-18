@@ -2,6 +2,12 @@
 error_reporting(E_ERROR | E_PARSE);//evita mostrar errores por si ingresamos a la paguina sin haber iniciado sesion 
 session_start();
 $varsesion = $_SESSION['nombre'];
+$varsesioncontra = $_SESSION['contraseña'];
+
+echo $varsesion;
+echo $varsesioncontra;
+
+
 
 
 ?>

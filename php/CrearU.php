@@ -19,10 +19,21 @@ if(isset($_POST['mandar']))
            if(password_verify($contra,$has))
            {            
                $consulta  = "INSERT INTO usuarios (`nombre`, `apellido`, `dni`, `edad`, `contrasena`, `nusuario`, `email`, `estado`) VALUES ('$nom','$ap','$dni ','$edad','$has','$usu ','$email', 'Campecino') ";      
-               $resultado = mysqli_query($con,$consulta);
+               $resultado = mysqli_query($conex,$consulta);
  
-               $TAG = rand (10000,99999999999);
- 
+               $TAG = rand (10000,9999999);
+
+               if($resultado)
+                {
+                 $idu = "SELECT `id` FROM `usuarios` WHERE `email` = '$email' ";
+                 $resultID = mysqli_query($conex,$idu);
+                    while($row = $resultID->fetch_assoc())
+                    {
+                      $alfa = $row['id'];
+                      $consultaTAG = "INSERT INTO `tags`(`idu`, `tag`, `estado`) VALUES ('$alfa','$TAG','Usable')"; //Usable, baneado, Permabaneado
+                      $resultadoTAG = mysqli_query($conex,$consultaTAG);
+                    }
+                 }
               
                  header("location: form-login.php");            
                
