@@ -25,7 +25,31 @@ $varsesion = $_SESSION['nombre'];
 
 		</head>
 		<body>
-		<main class ="ponerlaEnELMedio">
+
+		<header>
+				<div class="MostrarUsuario">
+					<a href="#" class ="logo"><img src="Juan.png" class = "logo-img"></a><br>
+					<h1><?php echo $varsesion; ?></h1>
+				</div>
+				
+				<nav>
+					<?php
+
+					if($varsesion == null){
+
+					
+					?><a href="#" class = "NAV-BOTON"><button >LA PLEBE</button></a><?php }?>
+					
+			
+					<a href="Ldinteres.php" class = "NAV-BOTON"><button >Lugares de interes</button></a>	
+					<a href="FormUpd.php" class = "NAV-BOTON"><button >Modificar usuario</button></a>
+					<a href="cerrar.php"><button>Cerrar Sesion</button></a>
+				</nav>
+
+				</header>
+		
+		<br><br><br>
+				<main class ="ponerlaEnELMedio">
 				
 				<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 					
@@ -74,7 +98,11 @@ $varsesion = $_SESSION['nombre'];
 				<br><br><br><br>
 			</main>
 		
-
+			<br><br><br>
+			<p>
+				Buenos Aires, en el texto de la Constitución: Ciudad de Buenos Aires o Ciudad Autónoma de Buenos Aires (CABA),10​ también llamada Capital Federal, por ser la sede del gobierno nacional,11​ es la capital y ciudad más poblada de la República Argentina. Esta metrópolis es una ciudad autónoma que constituye uno de los 24 distritos, o «jurisdicciones de primer orden»12​ que conforman el país. Tiene sus propios poderes ejecutivo, legislativo y judicial. Está situada en la región centro-este del país, sobre la orilla sur del Río de la Plata, en la región pampeana.
+			</p>
+				
 		<?php $_SESSION['nombre'];  ?>
 		<?php
 			if ($varsesion == null)
