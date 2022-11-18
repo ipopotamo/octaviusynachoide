@@ -23,7 +23,7 @@
 </section>
     
     <?php
-        include("../php/validar-Login.php");
+        include_once("../php/validar-Login.php");
 
     ?>
 
