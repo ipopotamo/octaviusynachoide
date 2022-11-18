@@ -96,7 +96,16 @@ h2{
     font-family: 'Alfa Slab One', cursive;
     color: white;
 }
+
 .cerrar-sesion{
     display: flex;
 
 }
+
+p{
+    padding: 5%;
+    font-size: larger;
+    color:rgb(218, 216, 216);
+}
+
+
