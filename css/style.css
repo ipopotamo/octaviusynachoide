@@ -1,76 +1,32 @@
-body{
-    background-color: rgb(39, 80, 44);
+body
+{
+		
+		height: 800px;
+		background-color:rgb(99, 99, 99);
+		justify-content: center;
 }
 
-.form-element{
-padding: 10px;
-}
-label{
-    color:white;
-}
-.contenido{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    
-}
-button{
-    padding: 5%;
-    margin-left: 30%;
+.conte
+{
 
-}
-.boton-del-login{
-    /*border: 1px red solid;*/
-    padding: 1%;
-    width: 25%;
-    min-width: 20%;
-    margin: 10px;
-    background-color:rgb(39, 80, 44) ;
-    border-radius: 20px;
+	width: auto;
+	padding-top: 250px;
+	justify-content: center;
+	height: 200px;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
 }
 
-.boton-del-login:hover{
-    background-color: rgb(21, 51, 25);
-    transition-duration: 0.4s;
-    color: white;
-
+.lol
+{
+	transition-duration: 0.4s;
+	border-radius: 12px;
+	height: 30px;
+	width: 300px;
 }
-.ingrese-dato-login{
-    padding: 2%;
-    margin: 3%;
-}
-.contenido-login{
-    border: 5px rgb(10, 158, 163) solid;
-    background-color: rgb(4, 81, 85);
-    width: 50%;
-    height: 500px;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    text-align: center;
-    
-}
-
-.caja1{
-    margin-top: 10%;
-    margin-left: 10%;
-    margin-right: 10%;
-
-    text-align: center;
-}
-#botonInicioSesion{
-    width: 100%;
-    margin-left: 1%;
-    margin-top: 5%;
-}
-
-.Centrar-boton{
-    display: grid;
-    place-items: center;
-}
-a{
-    color: white;
-}
-a:hover{
-    color: tomato;
+.lol:hover
+{
+	background-color: #5062c9; /* Green */
+  color: rgb(250, 250, 250);
 }

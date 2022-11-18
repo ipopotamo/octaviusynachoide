@@ -1,60 +1,7 @@
 body{
     background-color: rgb(77, 61, 75);
     align-items: center;
-    margin: 0%;   
-}
-
-header{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color:brown;
-    margin-bottom: 2%;
-    border: black 1px solid;
-}
-
-nav{
-    padding-bottom: 15px;
-    width: 90%;
-    border: green 1px solid;
-}
-nav a{
-    padding: 2%;
-}
-nav a:hover{
-    color: white;
-}
-
-.MostrarUsuario{
-    margin-top:10px ;
-    border: blue solid 2px;
-}
-.logo{
-    display: flex;
-    align-items: center;
-    padding: 1%;
-    width: 10%;
-    margin: none;
     
-}
-.logo-img{
-    height: 50px;
-    margin: 15px;
-    border-radius: 12px;
-
-}
-
-p{
-    border: solid 3px red;
-    height: 50%;
-    width:auto;
-    text-align: center;
-    background-color: white;
-    margin-right:20%;
-    margin-left:20%;
-}
-Button{
-    margin: 1%;
 }
 .carousel-inner{
     height:400px;
@@ -70,7 +17,6 @@ Button{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: blue solid 5px;
 
 }
 h1{
@@ -97,7 +43,7 @@ button{
 button:hover
 {
     transition-duration: 0.4s;
-	background-color: #008cff; 
+	background-color: #008cff; /* Green */
     color: rgb(250, 250, 250);
     
 }
@@ -148,13 +94,4 @@ h2{
     text-align: center;
     font-family: 'Alfa Slab One', cursive;
     color: white;
-}
-
-
-@media(min-width: 600px){
-    header{
-        flex-direction: row;
-        padding: 0px 30px;
-        justify-content: space-between;
-    }
 }

@@ -71,8 +71,6 @@
                 </section>
             </main>
         </form>    
-        <div class ="Centrar-boton">
-            <a href="index.php"><button id ="botonInicioSesion">Iniciar Sesion</button></a>
-        </div>
+       
          
 </body></html>

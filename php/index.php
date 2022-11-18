@@ -73,15 +73,9 @@ $varsesion = $_SESSION['nombre'];
 				</div>
 				<br><br><br><br>
 			</main>
-
-
-        <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat cum molestias natus necessitatibus laboriosam voluptatem dolor dolorum, maxime excepturi. Laudantium corporis quos optio dolor voluptates delectus neque accusantium, eligendi consequuntur?
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quae asperiores cupiditate iusto unde quibusdam totam accusamus. Incidunt tempore, assumenda molestias molestiae amet nobis quaerat hic ea dolore accusantium consequuntur.
-		</p>
-
 		
 
-		<h1>¿Que va a hacer? <?php $_SESSION['nombre'];  ?></h1>
+		<?php $_SESSION['nombre'];  ?>
 		<?php
 			if ($varsesion == null)
 			{
@@ -90,37 +84,19 @@ $varsesion = $_SESSION['nombre'];
 		
 		?>
 
+	
+
+<br>
 
 
-<?php
-    $inc = include("conexion.php");
-
- if ($inc) {
-	$consulta = "SELECT * FROM `comentarios` ";
-	$resultado = mysqli_query($conex,$consulta);
- }
+		<div class="container1">
+		<br>
+		<a href="cerrar.php"><button>CERRAR SESION</button></a>
+		</div>
+		<br><br><br>
 
 
 
-     ?>
-		<table class = "tabla2" >
-			 <thead>
-
-                 <th class = "col">Nombre</th>
-				 <th class = "col">Comentario</th>
-				 <th class = "col">Fecha</th>
-
-			 </thead>
-				 <tbody>
-				 <?php while($row = $resultado->fetch_assoc()){    ?>
-					 <tr>
-						 <td class = "fil"><?php  echo $row['usuarios'] ?></td>
-						 <td class = "fil"><?php  echo $row['comentario'] ?></td>
-                         <td class = "fil"><?php  echo $row['fecha_comentario'] ?></td>
-					
-				 <?php }?>
-				 </tbody>
-		 </table>
 
 		</body>
 </html>
