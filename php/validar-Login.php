@@ -7,18 +7,13 @@ include('conex.php');
         $_SESSION['usuario']=$usuario;
         $_SESSION['contraseña']=$contraseña;
 
-
-
-        $consulta="SELECT*FROM usuarios where nusuario ='$usuario' and contrasena='$contraseña'";
-        $resultado=mysqli_query($con,$consulta);
-
-
-
         if (isset($_POST['mandar']))
         {
             if (strlen($_POST['usuario']) >= 1 && strlen($_POST['contraseña']) >= 1)
-            {
-            
+            {        
+        $consulta="SELECT*FROM usuarios where nusuario ='$usuario' and contrasena='$contraseña'";
+        $resultado=mysqli_query($con,$consulta);
+
                 if ($resultado) {
                     header("location: ../pagina/inicio.php");
                     exit();   
@@ -32,3 +27,4 @@ include('conex.php');
                 }
             
         }
+        ?>

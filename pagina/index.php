@@ -38,12 +38,17 @@
      <a href ="FormReg.php"><button class ="boton-del-login">Crear Usuario</button></a><br>
 </section>
     
-    <?php
+<?php
+        include ("../php/validar-Login.php")
+        ?>
+
 
 
         include_once("../php/validar-Login.php");
 
     ?>
+
+
 
 </body>
 </html>
