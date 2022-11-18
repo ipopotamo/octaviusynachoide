@@ -66,7 +66,7 @@
                     
                     
                        <?php
-                            include("CrearU.php");
+                            include("../php/CrearU.php");
                         ?>  
                 </section>
             </main>

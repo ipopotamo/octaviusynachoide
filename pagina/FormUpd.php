@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Inicio de sesión</title>
+  
 
 </head>
 
@@ -15,15 +15,17 @@
     <form class = "caja1" method="post">
         <input class = "ingrese-dato-login" type="text"       name="usuario"      placeholder="usuario"><br>
         <input class = "ingrese-dato-login" type="password"   name="contraseña"   placeholder="contraseña"><br>
+        <input class = "ingrese-dato-login" type="text"       name="email"        placeholder="contraseña"><br>
+        <input class = "ingrese-dato-login" type="text"       name="dni"          placeholder="DNI"><br>
         <input  type="submit" name="mandar">
     </form>
 
-     <a href ="nuevacontra.php">¿Olvidaste tu contraseña?</a><br>
-     <a href ="FormReg.php"><button class ="boton-del-login">Crear Usuario</button></a><br>
+
+
 </section>
     
     <?php
-        include("../php/login.php");
+        include("../php/editarUpd.php");
 
     ?>
 
