@@ -1,3 +1,15 @@
+<?php
+
+		session_start();
+        $varsesionUSUARIO = $_SESSION['usuario'];
+        $varsesionCONTRAS = $_SESSION['contraseña'];
+
+		if ($varsesionUSUARIO == null){
+            die();
+        }
+        
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,7 +40,7 @@
     
     <?php
 
-        include("../php/login.php");
+
         include_once("../php/validar-Login.php");
 
     ?>

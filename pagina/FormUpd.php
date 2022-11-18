@@ -1,4 +1,13 @@
+<?php
+    session_start();
+        $varsesionUSUARIO = $_SESSION['usuario'];
+        $varsesionCONTRAS = $_SESSION['contraseña'];
+
+?>
+
 <!DOCTYPE html>
+
+
 <html lang="en">
 
 <head>
@@ -15,7 +24,7 @@
     <form class = "caja1" method="post">
         <input class = "ingrese-dato-login" type="text"       name="usuario"      placeholder="usuario"><br>
         <input class = "ingrese-dato-login" type="password"   name="contraseña"   placeholder="contraseña"><br>
-        <input class = "ingrese-dato-login" type="text"       name="email"        placeholder="contraseña"><br>
+        <input class = "ingrese-dato-login" type="text"       name="email"        placeholder="email"><br>
         <input class = "ingrese-dato-login" type="text"       name="dni"          placeholder="DNI"><br>
         <input  type="submit" name="mandar">
     </form>
@@ -25,8 +34,7 @@
 </section>
     
     <?php
-        include("../php/editarUpd.php");
-
+        include("../php/editarU.php");
     ?>
 
 </body>

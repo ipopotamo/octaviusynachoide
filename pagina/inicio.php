@@ -40,7 +40,7 @@
 				<nav>
 					<a href="#" class = "NAV-BOTON"><button >ALGO</button></a>
 					<a href="#" class = "NAV-BOTON"><button >ALGO</button></a>
-					<a href="#" class = "NAV-BOTON"><button >ALGO</button></a>
+					<a href="FormUpd.php" class = "NAV-BOTON"><button >Modificar usuario</button></a>
 					<a href="../php/cerrar_sesion.php"><button>Cerrar Sesion</button></a>
 				</nav>
 				</header>
