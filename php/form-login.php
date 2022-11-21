@@ -30,18 +30,17 @@
                                    </form>
                                    
 
-                                        <?php
-                                        include("CrearU.php");
-                                        include("validar-login.php");
-                                        ?>
+                                        
                         </section>
                     </main> 
                             <div class="contenido">
                                 <a href ="FormReg.php"><button  name="crear" >Crear usuario</button></a><br> 
-                                <a href ="form-delete.php"><button  name="crear" >Borrar usuario</button></a><br> 
+                               <!-- <a href ="form-delete.php"><button  name="crear" >Borrar usuario</button></a><br>--> 
                             </div>
 
-                    
+                    <?php
+                                        include("validar-Login.php");
+                                        ?>
                 </form>
                
 </body>

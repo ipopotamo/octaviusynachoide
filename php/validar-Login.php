@@ -5,25 +5,33 @@ include('conexion.php');
         $contraseña=$_POST['contraseña']; 
         $DNI=$_POST['dni'];   
         session_start();
-        $_SESSION['nombre']=$nombre;
-        $_SESSION['contraseña']=$contraseña;
-        $_SESSION['dni']=$DNI;
 
 
+        $consultaCONTRA_DB = "SELECT contrasena FROM usuarios where nusuario ='$nombre'";
+        $resultadoDB=mysqli_query($conex,$consultaCONTRA_DB);
 
-        $consulta="SELECT * FROM usuarios where nusuario ='$nombre' and contrasena = '$contraseña'";
+        $pepe = password_verify($contraseña,$has);
+        //echo $has;
+        while($row = $resultadoDB -> fetch_assoc()){
+            echo "pipo";
+        $juan = $row['contrasena'];
+        $consulta="SELECT nusuario , contrasena FROM usuarios where nusuario ='$nombre' and contrasena = '$juan'";
+        echo $nombre;
+        echo $juan;
         $resultado=mysqli_query($conex,$consulta);
-
-        $filas=mysqli_num_rows($resultado);
-
+        
 
         if (isset($_POST['sesion']))
         {
             if (strlen($_POST['nombre']) >= 1 && strlen($_POST['contraseña']) >= 1)
             {
-            if($filas >= 1){
-                
+            //if($filas >= 1){
+                echo "srry";
                 if ($resultado) {
+                    echo "vamo messi0";
+                    $_SESSION['nombre']=$nombre;
+                    $_SESSION['contraseña']=$contraseña;
+                    $_SESSION['dni']=$DNI;
                     header("location: index.php");           
                 }else{
                     ?>
@@ -32,6 +40,9 @@ include('conexion.php');
                 }
                 mysqli_free_result($resultado);
                 mysqli_close($conex);
-                }
+                //}
             }
         }
+
+        }
+        //$filas=mysqli_num_rows($resultado);

@@ -1,6 +1,9 @@
 body{
     background-color: rgb(77, 61, 75);
     align-items: center;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     
 }
 .carousel-inner{
@@ -17,12 +20,30 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.ponerlaEnELMedio3{
+    display: flex;
+    justify-content: left;
+    align-items: left;
 
 }
+
+.ponerlaEnELMedio2{
+
+    justify-content: center;
+    align-items: center;
+}
+
 h1{
     text-align: center;
     font-family: 'Alfa Slab One', cursive;
     font-size: 500%;
+    color:white;
+}
+h4{
+    text-align: center;
+    font-family: 'Alfa Slab One', cursive;
     color:white;
 }
 .container1{
@@ -107,5 +128,18 @@ p{
     font-size: larger;
     color:rgb(218, 216, 216);
 }
+.Header{
+    border: #313131 solid 3px;
+    background-color: rgb(134, 134, 134);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 15%;
+    height: 250px;
+}
+
+.Boton-index{
+    margin-top: 7%;
 
 
+}

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 12-11-2022 a las 03:41:33
+-- Tiempo de generación: 21-11-2022 a las 02:48:24
 -- Versión del servidor: 10.4.21-MariaDB
 -- Versión de PHP: 7.4.23
 
@@ -29,9 +29,8 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `funcion` (
   `id` int(11) NOT NULL,
-  `idr` int(11) NOT NULL,
-  `funcion` varchar(45) COLLATE utf8_spanish2_ci NOT NULL,
-  `descf` varchar(255) COLLATE utf8_spanish2_ci NOT NULL
+  `idu` int(11) NOT NULL,
+  `Comentario` varchar(255) COLLATE utf8_spanish2_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
 
 -- --------------------------------------------------------
@@ -71,12 +70,9 @@ CREATE TABLE `tags` (
 --
 
 INSERT INTO `tags` (`id`, `idu`, `tag`, `estado`) VALUES
-(1, 0, 2147483647, '0'),
-(2, 0, 2147483647, 'Usable'),
-(3, 15, 2147483647, 'Usable'),
-(4, 16, 2147483647, 'Usable'),
-(5, 17, 2147483647, 'Usable'),
-(7, 19, 2147483647, 'Usable');
+(19, 28, 7779562, 'Usable'),
+(20, 29, 5020512, 'Usable'),
+(21, 30, 221162, 'Usable');
 
 -- --------------------------------------------------------
 
@@ -103,11 +99,9 @@ CREATE TABLE `usuarios` (
 INSERT INTO `usuarios` (`id`, `nombre`, `apellido`, `dni`, `edad`, `contrasena`, `nusuario`, `email`, `estado`) VALUES
 (1, 'ignacio', 'Barbieri', 33648400, 28, 'poroelegante', 'ipopotamo', 'kekepipo@gmail.com', 'admin'),
 (2, 'Octavio', 'Lucardi-Fierro', 83810239, 9000, '$2y$10$79jKkvzqmDIxCjGKcyXPSOVRrZvFYwLlV8FQM1g7VK2wkPqdklW2i', 'Lucardini ', 'lucardini@gmail.com', 'admin'),
-(8, 'Ibai', 'Llanos', 321231131, 34, '$2y$10$NT45oTSbMLIlQz023X1Ri.hDW5Cj5yArLWWmYR53Jzu2mpyEiUHqu', 'IBAIGOD ', 'ibaigod@gmail.com', 'Campecino'),
-(9, 'Ibai', 'Llanos', 321231131, 34, '$2y$10$P55KcI4Y7g8ijSUipx1ure8qszUmJm/ax/9P8xEi8BOP9SyqtTeB.', 'IBAIGOD ', 'ibaigod@gmail.com', 'Campecino'),
-(14, 'Kratos', 'De Esparta', 1, 1000, '$2y$10$eTYxiCqWpoZNrLMoz.kH1eBj4/7sE15xE.bR3BAUSQCPIhS3iXuUW', 'Boy ', 'kratos_laloquitadelFornite@gmail.com', 'Campecino'),
-(17, 'maria', 'Llanos', 44895273, 28, '$2y$10$JtTuixcmA6DS.eGve3wvn.qV.B.sv3B6qCLz9XiWjCG1leNBQ3Ham', 'kkck@gmail.com ', 'octaviolf2016@gmail.com', 'Campecino'),
-(19, 'Dios', 'del universo', 0, 1, '$2y$10$0ggmAl0vR/KlUlXJagBqjuHSRDcR7EGyB2TY6e3rV8HVw5uosQV8e', 'yo ', 'Diosito@gmail.com', 'Campecino');
+(28, 'Javier', 'Blanco', 123193287, 18, '$2y$10$vTFms8g54DPGysoehK1XLejjreSl5rl2qg/epnq5rFj8QCfmOf0wi', 'jjblanco ', 'jjcblanco@gmail.com', 'Campecino'),
+(29, 'Pablin ', 'Ficcelin', 921873163, 19, '$2y$10$h1WURG7Yasp7qjwZ6LdBFuPv6OlCrM61bPCZVDQ4eZ528Rrqbksy2', 'pablin ', 'pablo@gmail.com', 'Campecino'),
+(30, 'Ibai', 'Lucardi-Fierro', 44895273, 26, '$2y$10$g.N6ke5APol.xkye4csFZul3daDTVYng77TabdwpYxkacS6f.tfJS', 'IBAI ', 'ibaigoadd@gmail.com', 'Campecino');
 
 --
 -- Índices para tablas volcadas
@@ -151,13 +145,13 @@ ALTER TABLE `funcion`
 -- AUTO_INCREMENT de la tabla `tags`
 --
 ALTER TABLE `tags`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

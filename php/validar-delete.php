@@ -16,7 +16,7 @@ while($row = $resultadoID -> fetch_assoc ())
      $juan = $row['idu'];
 }
 
-        echo $juan;
+
 	$consulta      = "DELETE  FROM tags  WHERE tag = '$tag'";
 
         $consultaUsua  = "DELETE  FROM usuarios  WHERE id = '$juan'";
