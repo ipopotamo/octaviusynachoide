@@ -19,6 +19,8 @@
            $consultaUs= "SELECT * FROM usuarios INNER JOIN tags ON usuarios.id = '$gama' AND tags.idu = '$gama' "; 
            $resultadoUS = mysqli_query($conex,$consultaUs);
      
+
+           // PARA SABER CUAL ES TU TAG
            while($recta = $resultadoUS->fetch_assoc()){
            $beta = $recta['tag'];      
            echo $beta;          
@@ -26,7 +28,7 @@
         
            
         
-            /* $nom     = $_POST['nombre'];
+            $nom     = $_POST['nombre'];
             $ap      = $_POST['apellido'];
             $edad    = $_POST['edad'];
             $email   = $_POST['email'];
@@ -37,10 +39,7 @@
             $consultaU  = "UPDATE `usuarios` SET `nombre`='$nom',`apellido`='$ap',`edad`='$edad',`contrasena`='$has',`nusuario`='$usu',`email`='$email' WHERE id = '$gama'  ";
             $resultadoU = mysqli_query($conex,$consultaU);   
            
-            if($resultadoU){
-            echo "feliciti";
-            }                
-                */
+            
     
 
     
