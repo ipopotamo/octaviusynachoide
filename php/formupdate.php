@@ -47,6 +47,12 @@ if ($varESTADO == "admin"){
 		}	
 	?>
 
+
+        <?php
+            include('ver-mi-tag.php');
+        
+        ?>
+
 <form method="post">
         <main class="contenido">
             <section>

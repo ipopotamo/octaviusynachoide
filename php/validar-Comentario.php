@@ -58,7 +58,8 @@ if(isset($_POST['comento']))
 			 </thead>
 				 <tbody>
 				 
-                 <?php while($row = $resultado->fetch_assoc()){    ?>
+                 <?php 
+                 while($row = $resultado->fetch_assoc()){    ?>
 					 <tr>
                         
                         <?php
@@ -77,7 +78,7 @@ if(isset($_POST['comento']))
                                 ?>
                                 
                                         <form  method="post">
-										<td class = "fil"><input type="text" name="idCOM" pattern="[0-9]+"></input></td>										
+										<td class = "fil"><input  placeholder = "Ingrese el id a borrar"type="text" name="idCOM" pattern="[0-9]+"></input></td>										
 										
 										<td class = "fil"><button type="submit" name="descomento" value="descomento">Comentario ILEGAL</button></td>
 

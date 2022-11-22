@@ -42,7 +42,7 @@ $_SESSION['estado'] = $varESTADO;
 			<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
 				
 				<meta charset="utf-8">
-
+		
 		</head>
 		<body>
 		

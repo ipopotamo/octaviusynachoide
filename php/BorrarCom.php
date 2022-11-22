@@ -29,12 +29,13 @@ if(isset($_POST['descomento']))
     if(strlen($_POST['idCOM']) >= 1)
     {
             $comentario     = $_POST['idCOM'];
-      
-               $consulta  = "DELETE FROM `comentarios` WHERE id = '$comentario'";      
+             //"DELETE FROM `comentarios` WHERE id = '$comentario'"
+               $consulta  = "UPDATE `comentarios` SET `Comentario`='Esta opinión ahora es Ilegal, en este momento un camión policial será enviado a su domicilio' WHERE id = '$comentario'";      
                $resultado = mysqli_query($conex,$consulta);
 
                if($resultado)
                 {
+                
                  header("location: Insert-comentario.php");
                 }          
     }   

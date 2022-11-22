@@ -1,6 +1,7 @@
 <?php
     include("conexion.php");
-   
+    session_start();
+    $varsesion = $_SESSION['nombre'];
 
  if (isset($_POST['modificar'])) {
     if (strlen($_POST['tag']) >= 1 && strlen($_POST['nombre']) >= 1 && strlen($_POST['apellido']) >= 1 && strlen($_POST['edad']) >= 1 && strlen($_POST['email']) >= 1 && strlen($_POST['usuario']) >= 1 && strlen($_POST['contraseña']) >= 1) {       
@@ -14,6 +15,18 @@
            $gama = $flecha['idu'];
              //echo $gama;
            }
+
+          
+           $consultaUs= "SELECT * FROM usuarios INNER JOIN tags ON usuarios.id = '$gama' AND tags.idu = '$gama' "; 
+           $resultadoUS = mysqli_query($conex,$consultaUs);
+     
+
+           // PARA SABER CUAL ES TU TAG
+           while($recta = $resultadoUS->fetch_assoc()){
+           $beta = $recta['tag'];      
+            echo $beta;          
+           }
+           
         
             $nom     = $_POST['nombre'];
             $ap      = $_POST['apellido'];
@@ -30,6 +43,13 @@
             //echo "feliciti";
             header("location: cerrar.php");
             }                
+
+            
+    
+
+    
+
+
   }
 }
 

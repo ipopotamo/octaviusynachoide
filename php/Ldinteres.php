@@ -158,55 +158,99 @@ while($row = $resultadoEstado->fetch_assoc()){
             <br><br><br><br>
             <h2>El parque Tres de Febrero</h2>
 
-					<p>
+						<p>
 
-					El parque Tres de Febrero, conocido popularmente como los Bosques de Palermo, es un conjunto de parques ubicado en el barrio de Palermo, en Buenos Aires, Argentina. Destaca por sus arboledas, lagos y rosedal, que conforman la zona verde más popular de la ciudad y en cuya ampliación y diseño colaboró el paisajista Carlos Thays.
-					<br>
-					<br>
+						El parque Tres de Febrero, conocido popularmente como los Bosques de Palermo, es un conjunto de parques ubicado en el barrio de Palermo, en Buenos Aires, Argentina. Destaca por sus arboledas, lagos y rosedal, que conforman la zona verde más popular de la ciudad y en cuya ampliación y diseño colaboró el paisajista Carlos Thays.
+						<br>
+						<br>
 
-					La historia de los extensos terrenos del parque se remonta a la fundación de Buenos Aires en 1580, cuando Juan de Garay repartió las tierras en las afueras del pueblo original para instalar chacras. El primer poblador de los terrenos que hoy forman parte del parque fue el capitán Doménico, que había castellanizado su nombre italiano como Domingo y luego como Domínguez, agregándole el gentilicio de su ciudad de origen, Palermo, con lo cual pasó a llamarse Juan Domínguez Palermo, y a la zona de sus tierras se las conocía por "Palermo".1​
+						La historia de los extensos terrenos del parque se remonta a la fundación de Buenos Aires en 1580, cuando Juan de Garay repartió las tierras en las afueras del pueblo original para instalar chacras. El primer poblador de los terrenos que hoy forman parte del parque fue el capitán Doménico, que había castellanizado su nombre italiano como Domingo y luego como Domínguez, agregándole el gentilicio de su ciudad de origen, Palermo, con lo cual pasó a llamarse Juan Domínguez Palermo, y a la zona de sus tierras se las conocía por "Palermo".1​
 
-					El 22 de diciembre de 1808, se creó el Partido de Palermo, que fue perdiendo tierras y quedó reducido al área entre la actual avenida Scalabrini Ortiz y el barrio de Recoleta.2
+						El 22 de diciembre de 1808, se creó el Partido de Palermo, que fue perdiendo tierras y quedó reducido al área entre la actual avenida Scalabrini Ortiz y el barrio de Recoleta.2
 
-					TE PODES ENCONTRAR UN TRABA..
+						TE PODES ENCONTRAR UN TRABA..
 
-					</p>
+						</p>
+
+<br><br><br>
+<main class ="ponerlaEnELMedio">
+				
+				<div id="carouselExampleControls3" class="carousel slide" data-ride="carousel">
+					
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+						<img id = "imgcarrusel" class="d-block w-100" src="img/bp.jpg" alt="First slide">
+					</div>
+					
+					<div class="carousel-item">
+						<img id = "imgcarrusel" class="d-block w-100" src="img/bosques.jpg" alt="Second slide">
+					</div>
+
+					<div class="carousel-item">
+						<img id = "imgcarrusel" class="d-block w-100" src="img/descarga.jpg" alt="Second slide">
+					</div>
+                    <div class="carousel-item">
+						<img id = "imgcarrusel" class="d-block w-100" src="img/b.jpg" alt="Second slide">
+					</div>
+                    </div>
+					<a class="carousel-control-prev" href="#carouselExampleControls3" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselExampleControls3" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+				<br><br>
+			</main>
+
+			<br><br>
+			<h2>Lodon City</h2>
+
+						<p>
+						Situado en pleno corazón de la city porteña, desde el 28 de Septiembre de 1954, “London City” fue refugio de poetas, artistas, políticos, que transitaban desde el Palacio Municipal hasta el edificio del Consejo Deliberante, periodistas que entraban y salían del vecino edificio del diario La Prensa y de los porteños y turistas que paseaban y trabajaban a lo largo de la hermosa Avenida de Mayo.
+						<br>
+						Dirección: Av. de Mayo 599, CABA.
+						</p>
 
 
 
+<br>
 
-					<br><br><br>
-					<main class ="ponerlaEnELMedio">
-									
-									<div id="carouselExampleControls3" class="carousel slide" data-ride="carousel">
-										
-										<div class="carousel-inner">
-											<div class="carousel-item active">
-											<img id = "imgcarrusel" class="d-block w-100" src="img/bp.jpg" alt="First slide">
-										</div>
-										
-										<div class="carousel-item">
-											<img id = "imgcarrusel" class="d-block w-100" src="img/bosques.jpg" alt="Second slide">
-										</div>
+			<br><br>
+            <main class ="ponerlaEnELMedio">
+				
+				<div id="carouselExampleControls4" class="carousel slide" data-ride="carousel">
+					
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+						<img id = "imgcarrusel" class="d-block w-100" src="img/lodon.jpg" alt="First slide">
+					</div>
+					
+					<div class="carousel-item">
+						<img id = "imgcarrusel" class="d-block w-100" src="img/comidaL.jpg" alt="Second slide">
+					</div>
 
-										<div class="carousel-item">
-											<img id = "imgcarrusel" class="d-block w-100" src="img/descarga.jpg" alt="Second slide">
-										</div>
-										<div class="carousel-item">
-											<img id = "imgcarrusel" class="d-block w-100" src="img/b.jpg" alt="Second slide">
-										</div>
-										</div>
-										<a class="carousel-control-prev" href="#carouselExampleControls3" role="button" data-slide="prev">
-											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-											<span class="sr-only">Previous</span>
-										</a>
-										<a class="carousel-control-next" href="#carouselExampleControls3" role="button" data-slide="next">
-											<span class="carousel-control-next-icon" aria-hidden="true"></span>
-											<span class="sr-only">Next</span>
-										</a>
-									</div>
-									<br><br><br><br>
-								</main>
-								<br><br>
+					<div class="carousel-item">
+						<img id = "imgcarrusel" class="d-block w-100" src="img/cortazarL.jpg" alt="Second slide">
+					</div>
+                    <div class="carousel-item">
+						<img id = "imgcarrusel" class="d-block w-100" src="img/lodon2.jpg" alt="Second slide">
+					</div>
+                    </div>
+					<a class="carousel-control-prev" href="#carouselExampleControls4" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselExampleControls4" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+				
+			</main>
+		<br><br><br><br>
+
 </body>
 </html>
