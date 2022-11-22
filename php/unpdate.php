@@ -16,7 +16,12 @@
              echo $gama;
            }
           
-           $consultaUs= "SELECT * FROM usuarios INNER JOIN tags ON usuarios.id = '$gama' AND tags.idu = '$gama' "; 
+           $caca = "SELECT id FROM usarios WHERE nusuario = '$varsesion' ";
+           $juan = mysqli_query($conex,$caca);
+
+
+
+           $consultaUs= "SELECT tags.tag FROM usuarios INNER JOIN tags ON usuarios.nusuario = '$varsesion' AND tags.idu = '$caca' "; 
            $resultadoUS = mysqli_query($conex,$consultaUs);
      
 
