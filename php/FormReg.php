@@ -41,12 +41,15 @@
                                         <label>Nombre de Usuario</label><br>
                                         <input type="text" name="usuario" required />
                                     </div>
-
+                                    <div class="form-element">
+                                        <label>dni</label><br>
+                                        <input type="text" name="dni" required />
+                                    </div>
                                     <div class="form-element">
                                         <label>Contraseña</label><br>
                                         <input type="password" name="contraseña" required />
                                     </div>
-
+                                   
                                     <div class="form-element">
                                         <label>Confirmar contraseña</label><br>
                                         <input type="password" name="Ccontraseña" required />

@@ -17,7 +17,7 @@
            }
 
           
-           $caca = "SELECT id FROM usarios WHERE nusuario = '$varsesion' ";
+       /*     $caca = "SELECT id FROM usuarios WHERE nusuario = '$varsesion' ";
            $juan = mysqli_query($conex,$caca);
 
 
@@ -30,7 +30,7 @@
            while($recta = $resultadoUS->fetch_assoc()){
            $beta = $recta['tag'];      
             echo $beta;          
-           }
+           } */
            
         
             $nom     = $_POST['nombre'];
