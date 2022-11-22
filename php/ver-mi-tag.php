@@ -5,8 +5,9 @@ session_start();
 $varsesion = $_SESSION['nombre'];
 $varsesioncontra = $_SESSION['contraseña'];
 
-$varESTADO;
-$varTAG;
+
+
+
 if ($varsesion == null)
 {
 	header("location: form-login.php");
@@ -15,33 +16,32 @@ if ($varsesion == null)
 $consultaESTADO  = "SELECT estado FROM `usuarios` WHERE nusuario = '$varsesion'";
 $resultadoEstado = mysqli_query($conex,$consultaESTADO);
 
-while($row = $resultadoEstado->fetch_assoc()){
-    $alfa = $row['estado'];
-	$varESTADO = $alfa;
-//echo $alfa;
-}
-$_SESSION['estado'] = $varESTADO;
+
+
+
 //--------------------------------------------------------------------------
 
 
-$caca = "SELECT id FROM usarios WHERE nusuario = '$varsesion' ";
-$juan = mysqli_query($conex,$caca);
+$alverto = "SELECT id FROM `usuarios` WHERE nusuario = '$varsesion'";
+$juan    = mysqli_query($conex,$alverto);
 
 
 
-$consultaUs= "SELECT tag FROM usuarios INNER JOIN tags ON usuarios.nusuario = '$varsesion' AND tags.idu = '$juan' "; 
+while($tintin = $juan->fetch_assoc())
+{
+$omega = $tintin['id'];
+}
+
+
+$consultaUs= "SELECT tag FROM usuarios INNER JOIN tags ON usuarios.nusuario = '$varsesion' AND tags.idu = '$omega' "; 
 $resultadoUS = mysqli_query($conex,$consultaUs);
 
-if ($resultadoUS){
-    echo "La consulta sale bien";
-}
+
 
 while($row = $resultadoUS->fetch_assoc()){
     $alfa = $row['tag'];
-	$pepe = $alfa;
-    //echo $alfa;
-
+	
 }
-    echo $pepe;
+    echo $alfa;
 
 ?>
