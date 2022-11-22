@@ -177,6 +177,54 @@ TE PODES ENCONTRAR UN TRABA..
 				<br><br><br><br>
 			</main>
 
+			<br><br><br>
+			<h2>Lodon City</h2>
+
+<p>
+Situado en pleno corazón de la city porteña, desde el 28 de Septiembre de 1954, “London City” fue refugio de poetas, artistas, políticos, que transitaban desde el Palacio Municipal hasta el edificio del Consejo Deliberante, periodistas que entraban y salían del vecino edificio del diario La Prensa y de los porteños y turistas que paseaban y trabajaban a lo largo de la hermosa Avenida de Mayo.
+<br>
+Dirección: Av. de Mayo 599, CABA.
+</p>
+
+
+
+<br>
+
+
+			
+			<br><br><br>
+            <main class ="ponerlaEnELMedio">
+				
+				<div id="carouselExampleControls4" class="carousel slide" data-ride="carousel">
+					
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+						<img id = "imgcarrusel" class="d-block w-100" src="img/lodon.jpg" alt="First slide">
+					</div>
+					
+					<div class="carousel-item">
+						<img id = "imgcarrusel" class="d-block w-100" src="img/comidaL.jpg" alt="Second slide">
+					</div>
+
+					<div class="carousel-item">
+						<img id = "imgcarrusel" class="d-block w-100" src="img/cortazarL.jpg" alt="Second slide">
+					</div>
+                    <div class="carousel-item">
+						<img id = "imgcarrusel" class="d-block w-100" src="img/lodon2.jpg" alt="Second slide">
+					</div>
+                    </div>
+					<a class="carousel-control-prev" href="#carouselExampleControls4" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselExampleControls4" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+				<br><br><br><br>
+			</main>
+
 
 </body>
 </html>
