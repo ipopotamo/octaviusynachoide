@@ -83,7 +83,7 @@ while($row = $resultadoEstado->fetch_assoc()){
 					
 						<div class = "ponerlaEnELMedio">
 							<a href="Ldinteres.php" class = "NAV-BOTON"><button >Lugares de interes</button></a>	
-							<a href="FormUpd.php" class = "NAV-BOTON"><button >Modificar usuario</button></a>
+							<a href="formupdate.php" class = "NAV-BOTON"><button >Modificar usuario</button></a>
 							<a href="cerrar.php"><button>Cerrar Sesion</button></a>
 						</div>
 					</main>
@@ -154,11 +154,7 @@ while($row = $resultadoEstado->fetch_assoc()){
 
 <br>
 
-<div class="container1">
-		<br>
-		<a href="cerrar.php"><button>CERRAR SESION</button></a>
-		</div>
-		<br><br><br>
+
 					<?php } ?>
 
 					

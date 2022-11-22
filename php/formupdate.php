@@ -7,9 +7,8 @@ $varsesion = $_SESSION['nombre'];
 <!DOCTYPE html>
 <html>
 <head>
-<link rel = "stylesheet" href = "../css/css_tabla.css">
-		<title>Actualizar una Obra</title>
-		<h1>Modificate a la Obra</h1>
+<link rel = "stylesheet" href = "../css/css_tabla.css">		
+		<h1>Modificate master</h1>
 		<meta charset="utf-8">
 		<a href="index.php"><button>VOLVE PAPA</button></a>
 <br><br>
@@ -23,21 +22,59 @@ $varsesion = $_SESSION['nombre'];
 		}	
 	?>
 
-    <form method="post">
-		<input type="text"   name="id"          placeholder="ID">	
-    	<input type="text"   name="nombre"      placeholder="Nombre">
-    	<input type="text"   name="descripcion" placeholder="Descripcion">
-    	<input type="text"   name="sucur"       placeholder="Sucursal">
-    	<input type="text"   name="zona"        placeholder="zona">
-   		<input type="text"   name="piso"        placeholder="piso"> 
-		<br>
-    	<input type="submit" name="boton">
-    </form>
-	
+<form method="post">
+        <main class="contenido">
+            <section>
+                <form method="post" name="signup-form">
+
+									<div class="form-element">
+                                        <label>Ingrese su tag</label><br>
+                                        <input type="text" name="tag" required />
+                                    </div>
+
+                                    <div class="form-element">
+                                        <label>Nombre</label><br>
+                                        <input type="text" name="nombre" required />
+                                    </div>
+
+                                    <div class="form-element">
+                                        <label>Apellido</label><br>
+                                        <input type="text" name="apellido"  required />
+                                    </div>
+
+                                    <div class="form-element">
+                                        <label>Edad</label><br>
+                                        <input type="text" name="edad" pattern="[0-9]+" required />
+									</div>
+
+                                    <div class="form-element">
+                                        <label>Email</label><br>
+                                        <input type="email" name="email" required />
+                                    </div>
+
+                                    <div class="form-element">
+                                        <label>Nombre de nuevo Usuario</label><br>
+                                        <input type="text" name="usuario" required />
+                                    </div>
+
+                                    
+                                    <div class="form-element">
+                                        <label>Contraseña</label><br>
+                                        <input type="password" name="contraseña" required />
+                                    </div>
+
+                                    <br><br>
+                                    <button type="submit" name="modificar" value="register">Modificar</button>
+                    </form>
+				</section>
+              </main>            
 
     <?php
-	include("update.php");
-	include("MostrarObras.php");
+	include("unpdate.php");
     ?>
 
-</body>
+</form>
+               
+			   </body>
+			   </html>
+			   

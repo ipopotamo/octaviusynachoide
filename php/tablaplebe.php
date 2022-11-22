@@ -58,8 +58,7 @@ if ($varsesion == null)
 										
 
 		   					 <?php }
-						 	//	$juan   = "DELETE * FROM usuarios WHERE ";
-					        //	$juanes = "DELETE * FROM tags     WHERE ";  
+						 	
 							 
 							 
 							 ?>
