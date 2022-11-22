@@ -14,7 +14,20 @@ if ($varsesion == null)
 }
 
 
+$consultaESTADO  = "SELECT estado FROM `usuarios` WHERE nusuario = '$varsesion'";
+$resultadoEstado = mysqli_query($conex,$consultaESTADO);
 
+while($row = $resultadoEstado->fetch_assoc()){
+    $alfa = $row['estado'];
+	$varESTADO = $alfa;
+//echo $alfa;
+}
+
+
+if ($varESTADO != 'admin')
+{
+	header("location: index.php");
+}
 ?>
 
 <!DOCTYPE html>

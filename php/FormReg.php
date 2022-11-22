@@ -43,11 +43,6 @@
                                     </div>
 
                                     <div class="form-element">
-                                        <label>Telefono</label><br>
-                                        <input type="text" name="telefono" pattern="[0-9]+" required />
-                                    </div>
-
-                                    <div class="form-element">
                                         <label>Contraseña</label><br>
                                         <input type="password" name="contraseña" required />
                                     </div>

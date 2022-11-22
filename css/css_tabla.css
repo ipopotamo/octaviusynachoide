@@ -63,3 +63,7 @@ button:hover{
 .botonn{
 	width: 250px;
 }
+input.comentario{
+	width: 500px;
+    height: 50px;
+}

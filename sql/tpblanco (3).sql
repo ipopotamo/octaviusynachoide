@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 21-11-2022 a las 02:48:24
+-- Tiempo de generación: 22-11-2022 a las 04:50:00
 -- Versión del servidor: 10.4.21-MariaDB
 -- Versión de PHP: 7.4.23
 
@@ -24,14 +24,26 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `funcion`
+-- Estructura de tabla para la tabla `comentarios`
 --
 
-CREATE TABLE `funcion` (
+CREATE TABLE `comentarios` (
   `id` int(11) NOT NULL,
-  `idu` int(11) NOT NULL,
+  `nusuario` varchar(255) COLLATE utf8_spanish2_ci NOT NULL,
   `Comentario` varchar(255) COLLATE utf8_spanish2_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
+
+--
+-- Volcado de datos para la tabla `comentarios`
+--
+
+INSERT INTO `comentarios` (`id`, `nusuario`, `Comentario`) VALUES
+(3, 'BLANQUITO', 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAA'),
+(4, 'BLANQUITO', 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAA'),
+(5, 'BLANQUITO', 'Esta opinión ahora es Ilegal, en este momento un camión policial será enviado a su domicilio'),
+(6, 'BLANQUITO', 'Tu opinión ahora es Ilegal, en este momento un camión policial será enviado a su domicilio'),
+(7, 'BLANQUITO', 'Tu opinión ahora es Ilegal, en este momento un camión policial será enviado a su domicilio'),
+(8, 'Lucardini ', 'Esta opinión ahora es Ilegal, en este momento un camión policial será enviado a su domicilio');
 
 -- --------------------------------------------------------
 
@@ -99,7 +111,7 @@ CREATE TABLE `usuarios` (
 INSERT INTO `usuarios` (`id`, `nombre`, `apellido`, `dni`, `edad`, `contrasena`, `nusuario`, `email`, `estado`) VALUES
 (1, 'ignacio', 'Barbieri', 33648400, 28, 'poroelegante', 'ipopotamo', 'kekepipo@gmail.com', 'admin'),
 (2, 'Octavio', 'Lucardi-Fierro', 83810239, 9000, '$2y$10$79jKkvzqmDIxCjGKcyXPSOVRrZvFYwLlV8FQM1g7VK2wkPqdklW2i', 'Lucardini ', 'lucardini@gmail.com', 'admin'),
-(28, 'Javier', 'Blanco', 123193287, 18, '$2y$10$vTFms8g54DPGysoehK1XLejjreSl5rl2qg/epnq5rFj8QCfmOf0wi', 'jjblanco ', 'jjcblanco@gmail.com', 'Campecino'),
+(28, 'blanquito', 'bien', 123193287, 89, '$2y$10$mP1/JFW0WCpJfglpD3bNLuPqSQ14aEXq..toGgcQC5MInRHPXcZh6', 'BLANQUITO', 'kashdajkshd@gmail.com', 'Campecino'),
 (29, 'Pablin ', 'Ficcelin', 921873163, 19, '$2y$10$h1WURG7Yasp7qjwZ6LdBFuPv6OlCrM61bPCZVDQ4eZ528Rrqbksy2', 'pablin ', 'pablo@gmail.com', 'Campecino'),
 (30, 'Ibai', 'Lucardi-Fierro', 44895273, 26, '$2y$10$g.N6ke5APol.xkye4csFZul3daDTVYng77TabdwpYxkacS6f.tfJS', 'IBAI ', 'ibaigoadd@gmail.com', 'Campecino');
 
@@ -108,9 +120,9 @@ INSERT INTO `usuarios` (`id`, `nombre`, `apellido`, `dni`, `edad`, `contrasena`,
 --
 
 --
--- Indices de la tabla `funcion`
+-- Indices de la tabla `comentarios`
 --
-ALTER TABLE `funcion`
+ALTER TABLE `comentarios`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -136,10 +148,10 @@ ALTER TABLE `usuarios`
 --
 
 --
--- AUTO_INCREMENT de la tabla `funcion`
+-- AUTO_INCREMENT de la tabla `comentarios`
 --
-ALTER TABLE `funcion`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `comentarios`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT de la tabla `tags`

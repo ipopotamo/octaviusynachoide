@@ -13,8 +13,9 @@
       
           while($flecha = $resultadoID->fetch_assoc()){
            $gama = $flecha['idu'];
-             echo $gama;
+             //echo $gama;
            }
+
           
            $caca = "SELECT id FROM usarios WHERE nusuario = '$varsesion' ";
            $juan = mysqli_query($conex,$caca);
@@ -28,9 +29,8 @@
            // PARA SABER CUAL ES TU TAG
            while($recta = $resultadoUS->fetch_assoc()){
            $beta = $recta['tag'];      
-           echo $beta;          
+            echo $beta;          
            }
-        
            
         
             $nom     = $_POST['nombre'];
@@ -44,10 +44,16 @@
             $consultaU  = "UPDATE `usuarios` SET `nombre`='$nom',`apellido`='$ap',`edad`='$edad',`contrasena`='$has',`nusuario`='$usu',`email`='$email' WHERE id = '$gama'  ";
             $resultadoU = mysqli_query($conex,$consultaU);   
            
+            if($resultadoU){
+            //echo "feliciti";
+            header("location: cerrar.php");
+            }                
+
             
     
 
     
+
 
   }
 }
