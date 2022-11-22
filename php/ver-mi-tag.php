@@ -42,6 +42,5 @@ while($row = $resultadoUS->fetch_assoc()){
     $alfa = $row['tag'];
 	
 }
-    echo $alfa;
-
-?>
+    ?> 
+    <h3>Su tag es: <?php echo $alfa;?></h3>

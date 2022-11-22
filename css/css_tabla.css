@@ -2,6 +2,7 @@ body{
 	text-align: center;
     background-color: rgb(77, 61, 75);
 	font-family: 'Alfa Slab One', cursive;
+
 }
 h1{
 	color: white;
@@ -66,4 +67,10 @@ button:hover{
 input.comentario{
 	width: 500px;
     height: 50px;
+}
+label{
+	color: aliceblue;
+}
+h3{
+	color: white;
 }
