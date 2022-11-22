@@ -131,8 +131,9 @@ p{
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin: 15%;
-    height: 250px;
+    margin: 10% 33%;
+    width: 33%;
+    height: 200px;
 }
 
 .Boton-index{
@@ -164,4 +165,16 @@ p{
     .ponerlaEnELMedio{
         padding:10px 0px ;
     }
+}
+
+.form-com{
+    border: #008cff solid 3px;
+    margin:  0% 33%;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.comentario{
+    width: 500px;
+    height: 50px;
 }

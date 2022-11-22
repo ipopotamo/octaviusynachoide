@@ -1,6 +1,5 @@
 <?php
-$inc=include('conexion.php'); 
-include('validar-delete.php'); 
+include('conexion.php');  
 error_reporting(E_ERROR | E_PARSE);//evita mostrar errores por si ingresamos a la paguina sin haber iniciado sesion 
 session_start();
 $varsesion = $_SESSION['nombre'];
@@ -13,7 +12,6 @@ if ($varsesion == null)
 	header("location: form-login.php");
 }
 
-
 $consultaESTADO  = "SELECT estado FROM `usuarios` WHERE nusuario = '$varsesion'";
 $resultadoEstado = mysqli_query($conex,$consultaESTADO);
 
@@ -22,42 +20,41 @@ while($row = $resultadoEstado->fetch_assoc()){
 	$varESTADO = $alfa;
 //echo $alfa;
 }
+$_SESSION['estado'] = $varESTADO;
 
-
-if ($varESTADO != 'admin')
-{
-	header("location: index.php");
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <link rel="stylesheet" href="../css/css_general.css">
-    <title>Borrar Usuario</title>
+    <title>Comentario</title>
 </head>
 <body>
-<form method="post">
+    <main class="form-com">
+        <form method="post">
         <main class="contenido">
             <section>
                 <form method="post" name="signup-form">
                                     <div class="form-element">
-                                        <label>Inserte el tag del usuario a eliminar</label><br>
-                                        <input type="text" name="tag" pattern="[0-9]+" required />
+                                        <label>Comentario</label><br>
+                                        <input class="comentario" type="text" name="nombre" placeholder="Ingrese su comentario con respecto a lo que desee" required />
                                     </div>
-                                        <br>
-                                    <button type="submit" name="mandar" value="mandar">Perma banear</button>
-                    </form>
-            </section>    
-        </main>
-        <main class="contenido">
 
-                <a href="index.php"><button type="submit" name="mandar" value="mandar">Volver</button></a>
-        </main>
-        
-        
-</form>
-                                        <?php
-                                        include("validar-delete.php");
-                                        ?>
+                                    
+                                    <button type="submit" name="mandar" value="register">Registrar</button>
+                    </form>
+                    
+                    
+                       <?php
+                            include("validar-Comentario.php");
+                        ?>  
+                </section>
+            </main>
+        </form>
+
+
+
+    </main>
 </body>
 </html>
