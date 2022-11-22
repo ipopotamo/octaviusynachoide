@@ -79,36 +79,39 @@ label{
 }
 
 
+.tabla {
+	
+	background-color: rgb(107, 106, 105);
+	text-align: center;
+	margin: 0 auto;
+
+}
 .tabla2{
 	width: 300px;
 	background-color: rgb(107, 106, 105);
-   	
+	border: solid rgb(10, 179, 209) 3px;
 	color:white;
 	text-align: left;
 	margin: 0 auto;
 }
 th, td
 {
-    border: solid rgb(10, 179, 209) 3px;
-    padding:20px;
+padding:20px;
 }
 
 thead{
-width: auto;
+width: 100%;
 background-color: rgb(107, 106, 105);
-border-bottom: solid 5px rgb(45, 52, 58);
+border-bottom: solid 5px rgb(10, 66, 122);
 color:white;
 
 }
+.fil{
+	background-color: rgb(63, 47, 47);
+	color: blanchedalmond;
 
-th{
-    background-color: slateblue;
 }
 
-td:hover{
-    background-color: rgb(27, 26, 34);
-    color: azure;
-}
 h2{
     text-align: center;
     font-family: 'Alfa Slab One', cursive;
@@ -133,7 +136,7 @@ p{
     align-items: center;
     margin: 10% 33%;
     width: 33%;
-    height: 200px;
+    min-height: 200px;
 }
 
 .Boton-index{
@@ -177,4 +180,8 @@ p{
 .comentario{
     width: 500px;
     height: 50px;
+}
+
+#UltimoBTN{
+    margin-bottom: 3%;
 }

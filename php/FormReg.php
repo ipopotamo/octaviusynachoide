@@ -31,10 +31,6 @@
                                         <input type="text" name="edad" pattern="[0-9]+" required />
                                     </div>
 
-                                    <div class="form-element">
-                                        <label>DNI</label><br>
-                                        <input type="text" name="dni" pattern="[0-9]+" required />
-                                    </div>
 
                                     <div class="form-element">
                                         <label>Email</label><br>

@@ -27,11 +27,6 @@ $_SESSION['estado'] = $varESTADO;
 <!DOCTYPE html>
 		<html>
 		<head>
-
-		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-left" viewBox="0 0 16 16">
-		<path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z"/>
-		<path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"/>
-		</svg>
 		
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">    
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -70,8 +65,14 @@ $_SESSION['estado'] = $varESTADO;
 							</div>
 
 							<div class="container1">
-							<a href="cerrar.php"><button class = "Boton-index">CERRAR SESION</button></a>
+								<a href="Insert-comentario.php" class = "NAV-BOTON"><button class = "Boton-index">Borrar Comentario</button></a>
 							</div>
+							
+
+							<div class="container1">
+							<a href="cerrar.php"><button id = "UltimoBTN"class = "Boton-index">CERRAR SESION</button></a>
+							</div>
+
 						</section>
 						<?php } ?>
 					
@@ -90,14 +91,12 @@ $_SESSION['estado'] = $varESTADO;
 					
 						<div class = "ponerlaEnELMedio">
 							<a href="Ldinteres.php" class = "NAV-BOTON"><button >Lugares de interes</button></a>	
-							<a href="FormUpd.php" class = "NAV-BOTON"><button >Modificar usuario</button></a>
-							<a href="cerrar.php"><button> Cerrar Sesion</button></a>
+							<a href="formupdate.php" class = "NAV-BOTON"><button >Modificar usuario</button></a>
+							<a href="cerrar.php"><button>Cerrar Sesion</button></a>
+
 						</div>
 					</main>
-					
-						
-					
-					
+							
 				</nav>
 
 				</header>
@@ -157,12 +156,12 @@ $_SESSION['estado'] = $varESTADO;
 				Buenos Aires, en el texto de la Constitución: Ciudad de Buenos Aires o Ciudad Autónoma de Buenos Aires (CABA),10​ también llamada Capital Federal, por ser la sede del gobierno nacional,11​ es la capital y ciudad más poblada de la República Argentina. Esta metrópolis es una ciudad autónoma que constituye uno de los 24 distritos, o «jurisdicciones de primer orden»12​ que conforman el país. Tiene sus propios poderes ejecutivo, legislativo y judicial. Está situada en la región centro-este del país, sobre la orilla sur del Río de la Plata, en la región pampeana.
 			</p>
 						
-
 			<div class="ponerlaEnELMedio">
 			<a href="Insert-comentario.php" class = "NAV-BOTON"><button >Dejar Comentario</button></a>
 			<br><br>
 			</div>
 		
+
 					<?php } ?>
 
 					

@@ -71,8 +71,7 @@ if ($varESTADO != 'admin')
 										
 
 		   					 <?php }
-						 	//	$juan   = "DELETE * FROM usuarios WHERE ";
-					        //	$juanes = "DELETE * FROM tags     WHERE ";  
+						 	
 							 
 							 
 							 ?>

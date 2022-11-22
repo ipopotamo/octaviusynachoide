@@ -27,7 +27,7 @@ $_SESSION['estado'] = $varESTADO;
 <html lang="en">
 <head>
 
-    <link rel="stylesheet" href="../css/css_general.css">
+    <link rel="stylesheet" href="../css/css_tabla.css">
     <title>Comentario</title>
 </head>
 <body>
@@ -38,11 +38,11 @@ $_SESSION['estado'] = $varESTADO;
                 <form method="post" name="signup-form">
                                     <div class="form-element">
                                         <label>Comentario</label><br>
-                                        <input class="comentario" type="text" name="nombre" placeholder="Ingrese su comentario con respecto a lo que desee" required />
+                                        <input class="comentario" type="text" name="Comentario" placeholder="Ingrese su comentario con respecto a lo que desee" required />
                                     </div>
 
-                                    
-                                    <button type="submit" name="mandar" value="register">Registrar</button>
+                                    <br>
+                                    <button type="submit" name="comento" value="register">Comentar</button>
                     </form>
                     
                     
@@ -53,7 +53,10 @@ $_SESSION['estado'] = $varESTADO;
             </main>
         </form>
 
-
+        <div class="ponerlaEnELMedio">
+            <a href="index.php"><button>Volver</button></a>
+			<br><br>
+			</div>
 
     </main>
 </body>
